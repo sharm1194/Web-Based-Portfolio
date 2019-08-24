@@ -1,0 +1,158 @@
+/* Menu */
+* {
+ margin: 0;
+ padding: 0;
+
+}
+
+.menu {
+    overflow: hidden;
+  list-style-type: none;
+  margin-top: 15px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.menu li {
+ float: left;
+}
+
+.menu li a {
+ display: block;
+ color: white;
+ text-align: left;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.menu li ul{
+    display: none;
+}
+
+.menu li a:hover {
+ background-color:  #ff4d4d;
+}
+
+.active{
+    background: #ff4d4d;
+}
+
+/* sub menu */
+.submenu{
+    position: absolute;
+    list-style: none;
+    color: white;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-left: 0;
+}
+
+.submenu li{
+    width: 100%;
+    float: none;
+}
+.submenu li a{
+    color: white;
+}
+.submenu li a:hover{
+    background-color: #ff4d4d;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.subactive{
+    background: #ddd;
+}
+
+.profile {
+    float: left;
+    margin-left: 752.5px;
+    margin-top: 15px;
+    color: white;
+    margin-right: 89px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    box-sizing: border-box;
+    transition: .3s;
+
+}
+
+
+
+nav.black {
+    background:  #262626
+;
+    height: 90px;
+    padding: 10px 100px;
+    position: fixed;
+}
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    background: url(backimage.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.content {
+    
+   position: absolute;
+      font-family: Arial;
+ top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color:  #ffff80;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+
+
+
+
+
+}
+
+ .slideshow-element{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 125px;
+    font-weight: bold;
+}
+
+
+
+#logo {
+    position: absolute;
+    top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: white;
+}
+
+.pic img {
+ 
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.pic:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
